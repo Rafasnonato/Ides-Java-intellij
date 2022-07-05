@@ -2,7 +2,7 @@ package Br.com.dio.JavaFundamental.EntendoMetodos.CriacaoMetodos;
 
 public class Emprestimo {
 
-   public static int getDuasParcelas(){
+    public static int getDuasParcelas(){
        return 2;
    }
     public static int getTresParcelas(){
@@ -25,7 +25,7 @@ public class Emprestimo {
             double valorFinal = valor + (valor * getTaxatresParcelas());
             System.out.println(" O valor final do emprestimo para 3 parcelas: R$ " + valorFinal);
         }else {
-            System.out.println("Quantidade de parcelas não aceita.");
+            System.out.println(" Quantidade de parcelas não aceita.");
         }
     }
 

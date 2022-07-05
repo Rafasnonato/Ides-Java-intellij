@@ -3,7 +3,7 @@ package Br.com.dio.JavaFundamental.EntendoMetodos.CriacaoMetodos;
 public class Mensagem {
     public static void obterMensagem(int hora) {
         switch (hora) {
-
+            case 5:
             case 6:
             case 7:
             case 8:
@@ -11,6 +11,7 @@ public class Mensagem {
             case 10:
             case 11:
             case 12:
+                //metodo criado abaixo
                 mensagemBomDia();
                 break;
 
@@ -19,6 +20,7 @@ public class Mensagem {
             case 15:
             case 16:
             case 17:
+                //metodo criado abaixo
                 mensagemBoaTarde();
                 break;
             case 18:
@@ -32,7 +34,7 @@ public class Mensagem {
             case 2:
             case 3:
             case 4:
-            case 5:
+                //metodo criado abaixo
                 mensagemBoaNoite();
                 break;
             default:
@@ -43,6 +45,7 @@ public class Mensagem {
 
     }
 
+    //metodo criado para imprimir mensagem desejada
     public static void mensagemBomDia() {
         System.out.println(" Bom dia!!! ");
     }

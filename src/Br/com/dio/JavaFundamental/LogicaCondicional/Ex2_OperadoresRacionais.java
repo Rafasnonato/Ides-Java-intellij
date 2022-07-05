@@ -1,6 +1,6 @@
 package Br.com.dio.JavaFundamental.LogicaCondicional;
 
-public class OperadoresRacionais {
+public class Ex2_OperadoresRacionais {
 
     public static void main(String[] args) {
         int i1=10, i2 = 20;
@@ -27,6 +27,7 @@ public class OperadoresRacionais {
         System.out.println("c1 != c2 : " + (c1!=c2));
         System.out.println("c1 > c2 : " + (c1>c2));
         System.out.println("c1 <= c2 : " + (c1<=c2));
+        //so eh possivel comparar tamanho do char pq no fundo ele eh um codigo que representa uma letra
 
         System.out.println("s1 == s2 : " + (s1==s2));
         System.out.println("s1 == s3 : " + (s1 == s3));

@@ -5,12 +5,11 @@ public class Main {
         double areaQuadrado = retornoQuadilatero.area(3);
         System.out.println(" A area do quadrado e: " + areaQuadrado);
 
-        double areaRetangulo =retornoQuadilatero.area(5,5);
+        double areaRetangulo = retornoQuadilatero.area(5,5);
         System.out.println(" A area do retangulo e: " + areaRetangulo);
 
         double areaTrapezio = retornoQuadilatero.area(7,8,9);
         System.out.println(" A area do trapezio e: " + areaTrapezio);
-
 
     }
 

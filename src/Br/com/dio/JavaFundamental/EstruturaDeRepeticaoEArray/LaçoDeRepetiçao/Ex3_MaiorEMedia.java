@@ -1,10 +1,10 @@
 package Br.com.dio.JavaFundamental.EstruturaDeRepeticaoEArray.LaçoDeRepetiçao;
 import java.util.Scanner;
 
-public class maiorEMedia {
+public class Ex3_MaiorEMedia {
     public static void main(String[] args) {
         Scanner teclado= new Scanner(System.in);
-        int numero,maior = 0, i=0, acumuladorDeNumero =0;
+        int numero,maior = 0, contador=0, acumuladorDeNumero =0;
 
         do {
             System.out.println("Numero:");
@@ -13,9 +13,9 @@ public class maiorEMedia {
             if(numero>maior){
                 maior = numero;
             }
-            i++;
+            contador++;
 
-        }while ( i < 5);
+        }while ( contador < 5);
 
         double media = (acumuladorDeNumero/5);
         System.out.println(" O Maior numero é: " + maior);

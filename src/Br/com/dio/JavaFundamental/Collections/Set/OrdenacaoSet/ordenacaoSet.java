@@ -1,4 +1,5 @@
-package Br.com.dio.JavaFundamental.Collections.Set;
+package Br.com.dio.JavaFundamental.Collections.Set.OrdenacaoSet;
+
 
 import java.util.*;
 
@@ -15,7 +16,7 @@ public class ordenacaoSet {
             System.out.println(serie.getNome()+ " - " + serie.getGenero() + " - " + serie.getTempoEpisodio());
         }
 
-        System.out.println("--\tOrdem inserção\t--");
+        System.out.println("\n--\tOrdem inserção\t--");
         Set<Serie> minhasSeries1 = new LinkedHashSet<>(){{
             add(new Serie("Got", "Fantasia", 60));
             add(new Serie("Dark", "Drama", 60));
@@ -26,14 +27,14 @@ public class ordenacaoSet {
             System.out.println(serie.getNome()+ " - " + serie.getGenero() + " - " + serie.getTempoEpisodio());
         }
 
-        System.out.println("--\tOrdem natural (TempoEpisodio)\t--");
+        System.out.println("\n--\tOrdem natural (TempoEpisodio)\t--");
         Set<Serie> minhasSeries2 = new TreeSet<>(minhasSeries1);
 
         for (Serie serie : minhasSeries2) {
             System.out.println(serie.getNome()+ " - " + serie.getGenero() + " - " + serie.getTempoEpisodio());
         }
 
-        System.out.println("--\tOrdem Nome/Genero/Tempo\t--");
+        System.out.println("\n--\tOrdem Nome/Genero/Tempo\t--");
         Set<Serie> minhasSeries3= new TreeSet<>(new ComparatorNomeGeneroTempoEpisodio());
         minhasSeries3.addAll(minhasSeries);
         minhasSeries3.add(new Serie("Got","Terror",45));
@@ -42,7 +43,7 @@ public class ordenacaoSet {
             System.out.println(serie.getNome() + " - " + serie.getGenero() + " - " + serie.getTempoEpisodio());
         }
 
-        System.out.println("--\tOrdem Genero\t--");
+        System.out.println("\n--\tOrdem Genero\t--");
         Set<Serie> minhasSeries4 = new TreeSet<>(new ComparatorGenero());
         minhasSeries4.addAll(minhasSeries3);
         minhasSeries4.add(new Serie("The blacklist", "Ação" , 42));
@@ -52,7 +53,7 @@ public class ordenacaoSet {
         }
 
 
-        System.out.println("--\tOrdem Tempo episódio\t--");
+        System.out.println("\n--\tOrdem Tempo episódio\t--");
         Set<Serie> minhasSeries5 = new TreeSet<>(new ComparatorTempo());
         minhasSeries5.addAll(minhasSeries4);
         minhasSeries5.add(new Serie("Truques da mente","Documentario", 25));
@@ -61,10 +62,6 @@ public class ordenacaoSet {
         for ( Serie serie: minhasSeries5 ) {
             System.out.println(serie.getNome()+ " - " + serie.getGenero() + " - " + serie.getTempoEpisodio());
         }
-
-
-
-
 
     }
 }

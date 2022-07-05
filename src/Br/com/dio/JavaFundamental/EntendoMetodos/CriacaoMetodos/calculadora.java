@@ -17,7 +17,7 @@ public class calculadora {
     }
     public static void divisao (double numero1, double numero2) {
         if (numero2==0){
-            System.out.println("Impossivel dividir por 0");
+            System.out.println(" Impossivel dividir por 0");
         }else {
             double resultado = numero1 / numero2;
             System.out.println(" A divisao de " +numero1 + " por " + numero2 + " e " + resultado);

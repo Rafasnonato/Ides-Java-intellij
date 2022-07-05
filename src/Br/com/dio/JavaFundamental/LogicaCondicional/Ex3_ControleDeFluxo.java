@@ -1,6 +1,6 @@
 package Br.com.dio.JavaFundamental.LogicaCondicional;
 
-public class ControleDeFluxo {
+public class Ex3_ControleDeFluxo {
 
     public static void main(String[] args) {
 
@@ -16,7 +16,7 @@ public class ControleDeFluxo {
     }
 
     private static void ifAno() {
-        int mes = 1;
+        int mes = 9;
 
         if (mes == 1) {
             System.out.println("Janeiro");

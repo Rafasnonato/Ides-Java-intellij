@@ -2,7 +2,7 @@ package Br.com.dio.JavaFundamental.EstruturaDeRepeticaoEArray.LaçoDeRepetiçao;
 
 import java.util.Scanner;
 
-public class Nota {
+public class Ex2_Nota {
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
         double nota;

@@ -2,7 +2,7 @@ package Br.com.dio.JavaFundamental.EstruturaDeRepeticaoEArray.LaçoDeRepetiçao;
 
 import java.util.Scanner;
 
-public class Fatorial {
+public class Ex6_Fatorial {
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
         int fatorial, fatorial1, resultado = 1, resultadoWhile = 1;
