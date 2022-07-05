@@ -15,10 +15,11 @@ import javax.swing.*;
                     System.out.println("Resultado: " + resultado);
                     continueLooping = false;
                 } catch (NumberFormatException e) {
-                    e.printStackTrace();
+                    //Imprimir a excepcion.
+                    //e.printStackTrace();
                     JOptionPane.showMessageDialog(null, "Entrada inválida, informe um número inteiro! " + e.getMessage());
                 } catch (ArithmeticException e) {
-                    e.printStackTrace();
+                    //e.printStackTrace();
                     JOptionPane.showMessageDialog(null, "Impossível dividir um número por 0.");
                 }
                 finally {

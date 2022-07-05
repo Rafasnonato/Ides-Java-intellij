@@ -9,7 +9,6 @@ public class CheckedException {
         String nomeDoArquivo = "romances-blake-crouch.txt";
 
         try {
-
             imprimirArquivoNoConsole(nomeDoArquivo);
         } catch (FileNotFoundException e) {
             JOptionPane.showMessageDialog(null,
